@@ -58,7 +58,7 @@ The layout is organized into several main sections:
 
 ## 🔗 Live Demo
 
--
+-   [Try It](https://baselelsrogy.github.io/order-summary-card/)
 
 ## 🧑‍💻 Author
 
