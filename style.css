@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'font-redhat';
+    src: url(./assets/font/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf) format(truetype);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'font-redhat';
+    src: url(./assets/font/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf) format(truetype);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'font-redhat';
+    src: url(./assets/font/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf) format(truetype);
+    font-style: normal;
+    font-weight: 900;
+}
+
+:root {
+    --blue-color-50: hsl(225, 100%, 98%);
+    --blue-color-100: hsl(225, 100%, 94%);
+    --blue-color-700: hsl(245, 75%, 52%);
+    --blue-color-950: hsl(223, 47%, 23%);
+    --grey-color-600: hsl(224, 23%, 55%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'font-redhat';
+    font-weight: 500;
+    background-color: var(--blue-color-100);
+    max-height: 100vh;
+}
+
+.back-ground {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 45%;
+}
+
+.container {
+    padding-top: 70px;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    background-color: var(--blue-color-50);
+    border-radius: 20px;
+}
+
+.image-card {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.poster-card {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.content-card {
+    padding: 0 30px 30px;
+}
+
+.first-content {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.title-card {
+    font-weight: 900;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 18px;
+    color: var(--grey-color-600);
+    line-height: 1.5;
+}
+
+.middle-card {
+    padding: 20px;
+    background-color: hsl(225deg 100% 94% / 28%);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    margin-bottom: 23px;
+}
+
+.left,
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-icon {
+    padding-right: 13px;
+}
+
+.down {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.type-plan {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.pay-plan {
+    color: var(--grey-color-600);
+}
+
+.change-plan {
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--blue-color-700);
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.change-plan:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.505);
+}
+
+.btn-payment {
+    width: 100%;
+    padding: 15px 25px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 700;
+    background-color: var(--blue-color-700);
+    color: var(--blue-color-50);
+    font-size: 16px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    box-shadow: 1px 5px 24px 2px hsl(245deg 75% 52% / 42%);
+    transition: background-color 0.3s;
+}
+
+.btn-payment:hover {
+    background-color: hsl(245deg 75% 52% / 68%);
+}
+
+.end-card {
+    text-align: center;
+}
+
+.cancel {
+    display: inline;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--grey-color-600);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.cancel:hover {
+    color: black;
+}
+
+.attribution {
+    font-size: 13px;
+    color: var(--grey-color-600);
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 50px;
+}
+
+.attribution a:link {
+    font-size: 16px;
+    color: var(--blue-color-700);
+}
