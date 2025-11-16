@@ -58,6 +58,7 @@ body {
     margin: 0 auto;
     background-color: var(--blue-color-50);
     border-radius: 20px;
+    box-shadow: 0 0 15px 0 var(--blue-color-950);
 }
 
 .image-card {
