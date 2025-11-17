@@ -61,6 +61,12 @@ body {
     box-shadow: 0 0 15px 0 var(--blue-color-950);
 }
 
+@media (max-width: 576px) {
+    .card {
+        width: 345px;
+    }
+}
+
 .image-card {
     width: 100%;
     margin-bottom: 20px;
